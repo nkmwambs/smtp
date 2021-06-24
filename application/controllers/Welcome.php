@@ -20,6 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('Email_model');
+
+		$this->email_model->account_opening_email('staff','nkmwambs@gmail.com');
 		$this->load->view('welcome_message');
+
 	}
+
 }
