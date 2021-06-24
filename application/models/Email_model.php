@@ -49,7 +49,7 @@ class Email_model extends CI_Model {
 		$config = array();
         $config['useragent']	= "CodeIgniter";
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
-        $config['protocol']		= "sendmail";
+        $config['protocol']		= "smtp";
 		//$config['smtp_auth'] = TRUE;
         $config['smtp_host']	= "smtp.office365.com";
         $config['smtp_port']	= "587";
