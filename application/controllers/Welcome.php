@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('Email_model');
 
-		$this->Email_model->account_opening_email('staff','nkarisa@ke.ci.org');
+		$this->Email_model->account_opening_email('staff','nkmwambs@gmail.com');
 		$this->load->view('welcome_message');
 
 	}
