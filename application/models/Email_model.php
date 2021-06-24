@@ -51,7 +51,7 @@ class Email_model extends CI_Model {
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']		= "smtp";
 		//$config['smtp_auth'] = TRUE;
-        $config['smtp_host']	= "smtp.office365.com";
+        $config['smtp_host']	= "ssl://smtp.office365.com";
         $config['smtp_port']	= "587";
 		$config['smtp_crypto'] = 'tls';
 		$config['smtp_user']='afrstaffrecognition@ke.ci.org';
@@ -60,6 +60,7 @@ class Email_model extends CI_Model {
         $config['charset']		= 'utf-8';
         $config['newline']		= "\r\n";
         $config['wordwrap']		= TRUE;
+		
 
         $this->load->library('email');
 
