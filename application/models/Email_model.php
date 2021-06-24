@@ -61,7 +61,7 @@ class Email_model extends CI_Model {
         $config['newline']		= "\r\n";
         $config['wordwrap']		= TRUE;
 		
-
+/////////////////////
         $this->load->library('email');
 
         $this->email->initialize($config);
