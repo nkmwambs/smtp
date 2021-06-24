@@ -70,7 +70,7 @@ class Email_model extends CI_Model {
 
 		$system_name	='toolkit';	//$this->db->get_where('settings' , array('type' => 'system_name'))->row()->description;
 		if($from == NULL)
-			$from		=	'afrstaffrecognition@ke.ci.org';//$this->db->get_where('settings' , array('type' => 'system_email'))->row()->description;
+			//$from		=	'afrstaffrecognition@ke.ci.org';//$this->db->get_where('settings' , array('type' => 'system_email'))->row()->description;
 		
 		//$this->email->from($from, $system_name);
 		$this->email->from($from, $system_name);
