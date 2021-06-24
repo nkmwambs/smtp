@@ -50,6 +50,7 @@ class Email_model extends CI_Model {
         $config['useragent']	= "CodeIgniter";
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']		= "smtp";
+		$config['_smtp_auth'] = TRUE;
         $config['smtp_host']	= "smtp.office365.com";
         $config['smtp_port']	= "587";
 		$config['smtp_crypto'] = 'STARTTLS';
@@ -64,6 +65,8 @@ class Email_model extends CI_Model {
 
         $this->email->initialize($config);
 
+		$this->email->set_newline("\r\n");
+
 		$system_name	='toolkit';	//$this->db->get_where('settings' , array('type' => 'system_name'))->row()->description;
 		if($from == NULL)
 			$from		=	'livingstoneonduso@gmail.com';//$this->db->get_where('settings' , array('type' => 'system_email'))->row()->description;
@@ -77,6 +80,8 @@ class Email_model extends CI_Model {
 		$this->email->message($msg);
 		
 		$this->email->send();
+
+		
 		
 		echo $this->email->print_debugger();
 	}
