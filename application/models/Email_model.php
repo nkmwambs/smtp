@@ -71,7 +71,7 @@ class Email_model extends CI_Model {
 		if($from == NULL)
 			$from		=	'afrstaffrecognition@ke.ci.org';//$this->db->get_where('settings' , array('type' => 'system_email'))->row()->description;
 		
-		$this->email->from($from, $system_name);
+		//$this->email->from($from, $system_name);
 		$this->email->from($from, $system_name);
 		$this->email->to($to);
 		$this->email->subject($sub);
