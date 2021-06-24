@@ -50,8 +50,11 @@ class Email_model extends CI_Model {
         $config['useragent']	= "CodeIgniter";
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']		= "smtp";
-        $config['smtp_host']	= "localhost";
-        $config['smtp_port']	= "25";
+        $config['smtp_host']	= "smtp.office365.com";
+        $config['smtp_port']	= "587";
+		$config['smtp_crypto'] = 'tls';
+		$config['smtp_user']='afrstaffrecognition@ke.ci.org';
+		$config['smtp_pass']	= "@Compassion2021";
         $config['mailtype']		= 'html';
         $config['charset']		= 'utf-8';
         $config['newline']		= "\r\n";
