@@ -52,7 +52,7 @@ class Email_model extends CI_Model {
         $config['protocol']		= "smtp";
         $config['smtp_host']	= "smtp.office365.com";
         $config['smtp_port']	= "587";
-		$config['smtp_crypto'] = 'tls';
+		$config['smtp_crypto'] = 'STARTTLS';
 		$config['smtp_user']='afrstaffrecognition@ke.ci.org';
 		$config['smtp_pass']	= "@Compassion2021";
         $config['mailtype']		= 'html';
