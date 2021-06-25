@@ -50,8 +50,8 @@ class Email_model extends CI_Model {
         $config['useragent']	= "CodeIgniter";
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']		= "smtp";
-		//$config['smtp_timeout']='30';
-		//$config['smtp_auth'] = TRUE;
+		$config['smtp_timeout']='30';
+		$config['smtp_auth'] = TRUE;
         $config['smtp_host']	= "smtp.office365.com";
         $config['smtp_port']	= "587";//
 		$config['smtp_crypto'] = 'auto';
