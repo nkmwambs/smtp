@@ -47,7 +47,7 @@ class Email_model extends CI_Model {
 	{
 		
 		$config = array();
-        $config['useragent']	= "CodeIgniter";
+        $config['useragent']	= "Toolkit";
         $config['mailpath']		= "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']		= "smtp";
 		$config['smtp_timeout']='30';
