@@ -56,8 +56,8 @@ class Email_model extends CI_Model {
 
 		$config['smtp_host']	= "smtp.gmail.com";
 
-        $config['smtp_port']	= "465";//
-		$config['smtp_crypto'] = 'ssl';
+        $config['smtp_port']	= "587";//
+		$config['smtp_crypto'] = 'STARTTLS';
 		// $config['smtp_user']='afrstaffrecognition@ke.ci.org';
 		// $config['smtp_pass']	= "@Compassion123";
 
