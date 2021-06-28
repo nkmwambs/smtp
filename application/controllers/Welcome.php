@@ -20,9 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('Email_model');
+		// $this->load->model('Email_model');
 
-		$this->Email_model->account_opening_email('staff','londuso@ke.ci.org');
+		// $this->Email_model->account_opening_email('staff','londuso@ke.ci.org');
 		$this->load->view('welcome_message');
 
 	}
